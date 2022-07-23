@@ -67,3 +67,6 @@ a:hover{
 /* =====COMMON PARTS END =====*/
 
 /* =====OVERALL BEGIN =====*/
+.page-cover{
+    min-height:100vh;
+}
