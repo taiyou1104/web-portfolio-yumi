@@ -36,3 +36,34 @@ a{
 a:hover{
   text-decoration:underline;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+/* ======BASIC END=====*/
+
+/* ==== COMMON PARTS BEGIN ====*/
+.text-dark{
+    color:#101841;
+}
+.text-light{
+    color:#fefefe;
+}
+.text-1{
+    color:#e8aaa3;
+}
+.text-2{
+    color:#aeac78;
+}
+.text-3{
+    color:#f3deb9;
+}
+.bg-1{
+    background-color:#e8aaa3;
+}
+.bg-2{
+    background-color:#aeac78;
+}
+.bg-3{
+    background-color:#f3deb9;
+}
