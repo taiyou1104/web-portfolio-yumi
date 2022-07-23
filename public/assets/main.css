@@ -70,3 +70,11 @@ a:hover{
 .page-cover{
     min-height: 100vh;
 }
+.page-title{
+    margin: 0;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
