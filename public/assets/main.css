@@ -1,198 +1,227 @@
-@charset "utf-8"
-@import url('https://fontsgoogleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+/* ===== BASIC BEGIN ===== */
 html,
-body{
-    font-family: Roboto,'Noto Sans JP',sans-serif;
-    font-weight:400;
-    margin:0;
-    padding:0;
-    font-size:18px;
+body {
+  font-family: Roboto, "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
-button{
-    background-color:initial;
-    border:initial;
-    cursor:pointer;
-    outline:initial;
-    padding:initial;
-    appearance:initial;
-    -webkit-appearance:none;
-    border-radius:initial;
-    font-size:inherit;
+button {
+  background-color: initial;
+  border: initial;
+  cursor: pointer;
+  outline: initial;
+  padding: initial;
+  appearance: initial;
+  -webkit-appearance: none;
+  border-radius: initial;
+  font-size: inherit;
 }
 li,
-p{
-    tect-align:justify;
+p {
+  text-align: justify;
 }
-p{
-  margin:8px 0;
+p {
+  margin: 8px 0;
 }
-a{
-  color:#e8aaa3;
-  text-decoration:none;
+a {
+  color: #e8aaa3;
+  text-decoration: none;
 }
-a:hover{
-  text-decoration:underline;
+a:hover {
+  text-decoration: underline;
 }
+/* ===== BASIC END ===== */
 
-/* ======BASIC END=====*/
+/* ===== COMMON PARTS BEGIN ===== */
+.text-dark {
+  color: #101841;
+}
+.text-light {
+  color: #fefefe;
+}
+.text-1 {
+  color: #e8aaa3;
+}
+.text-2 {
+  color: #aeac78;
+}
+.text-3 {
+  color: #f3deb9;
+}
+.bg-1 {
+  background-color: #e8aaa3;
+}
+.bg-2 {
+  background-color: #aeac78;
+}
+.bg-3 {
+  background-color: #f3deb9;
+}
+/* ===== COMMON PARTS END ===== */
 
-/* ==== COMMON PARTS BEGIN ====*/
-.text-dark{
-    color:#101841;
+/* ===== OVERALL BEGIN ===== */
+.page-cover {
+  min-height: 100vh;
 }
-.text-light{
-    color:#fefefe;
-}
-.text-1{
-    color:#e8aaa3;
-}
-.text-2{
-    color:#aeac78;
-}
-.text-3{
-    color:#f3deb9;
-}
-.bg-1{
-    background-color:#e8aaa3;
-}
-.bg-2{
-    background-color:#aeac78;
-}
-.bg-3{
-    background-color:#f3deb9;
-}
-/* =====COMMON PARTS END =====*/
-
-/* =====OVERALL BEGIN =====*/
-.page-cover{
-    min-height: 100vh;
-}
-.page-title{
-    margin: 0;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
+.page-title {
+  margin: 0;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
 }
 .page-bg-icon {
-    position: fixed;
-    width: 32px;
-  }
-  .page-bg-icon-lt {
-    top: 16px;
-    left: 16px;
-  }
-  .page-bg-icon-rb {
-    right: 16px;
-    bottom: 16px;
-  }
-  /*=====OVER END=====:/
+  position: fixed;
+  width: 32px;
+}
+.page-bg-icon-lt {
+  top: 16px;
+  left: 16px;
+}
+.page-bg-icon-rb {
+  right: 16px;
+  bottom: 16px;
+}
+/* ===== OVERALL END ===== */
 
-  /*=====FOOTER BEGIN=====*/
-.footer-cover{
-    max-width: 1000px;
-    margin: 0 auto;
-    box-shadow: 0px 0px 20px -7px rgba(red, green, blue, alpha);
-    box-sizing: border-box;
-    position: relative;
+/* ===== FOOTER BEGIN ===== */
+.footer-cover {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+  position: relative;
+}
+.footer-contents {
+  padding: 16px;
+  font-size: 0.875rem;
+}
+/* ===== FOOTER END ===== */
+
+/* ===== CARD COMMON BEGIN ===== */
+.card-cover {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+  position: relative;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1001px) {
+  .card-cover {
+    border-radius: 16px;
+    overflow: hidden;
   }
-.footer-contents{
-    padding: 16px;
-    font-size: 0.875rem;
 }
-/*=====FOOTER END=====*/
+.card-title-cover {
+  margin: 0 0 0 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  position: relative;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  min-width: 100px;
+  z-index: 1;
+}
+.card-title-cover::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 4px;
+  right: -4px;
+  bottom: -4px;
+  left: 4px;
+}
+.card-title {
+  font-family: "Pacifico", Roboto, "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.card-subtitle {
+  font-size: 0.7rem;
+  line-height: 2em;
+}
+.card-title-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+.card-contents {
+  padding: 16px;
+  font-size: 0.875rem;
+}
+/* ===== CARD COMMON END ===== */
 
-/*=====CARD COMMON BEGIN=====*/
-.card-cover{
-    max-width: 1000px;
-    margin: 0 auto;
-    box-shadow: 0px 0px 20px -7px rgba(red, green, blue, alpha);
-    box-sizing: border-box;
-    position: relative;
-    background-color: #ffffff;
-}
-@media screen and(min-width: 1001px) {
-    .card-cover{
-        border-radius: 16px;
-        overflow: hidden;
-    }   
-}
-.card-title-cover{
-    margin: 0 0 0 16px;
-    display: inline-block;
-    padding: 8px 16px;
-    position: relative;
-    text-shadow: 2px 2px 2px rgba(red, green, blue, alpha);
-    min-width: 100px;
-    z-index: 1;
-}
-.card-title-cover::before{
-    content: '';
-    z-index: -1;
-    position: absolute;
-    background-color: rgba(red, green, blue, alpha);
-    top: 4px;
-    right: -4px;
-    bottom: -4px;
-    left: 4px;
-}
-.card-title{
-    font-family: 'pacifico',Roboto,'NOTO Sans JP',sansserif;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-}
-.card-subtitle{
-    font-size: 0.7rem;
-    line-height: 2em;
-}
-.card-title-line{
-    background-color: rgba(red, green, blue, alpha);
-    height: 4px;
-}
-.card-contents{
-    padding: 16px;
-    font-size: 0.875rem;
-}
-/*=====CARD COMMON END=====*/
-
-/*=====CARD | SELF-INTRODUCTION BEGIN=====*/
+/* ===== CARD | SELF-INTRODUCTION BEGIN ===== */
 .card-basic-info-layout {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 500px) {
+  .card-basic-info-layout {
+    flex-direction: row-reverse;
   }
-  @media screen and (min-width: 500px) {
-    .card-basic-info-layout {
-      flex-direction: row-reverse;
-    }
-  }
+}
+.my-photo {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.7);
+  max-width: 120px;
+  padding: 4px;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
   .my-photo {
-    display: block;
-    border-radius: 50%;
-    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.7);
-    max-width: 120px;
-    padding: 4px;
-    background-color: white;
+    margin: 16px auto;
   }
-  @media screen and (max-width: 500px) {
-    .my-photo {
-      margin: 16px auto;
-    }
+}
+@media screen and (min-width: 500px) {
+  .my-photo {
+    margin: 0 16px;
   }
-  @media screen and (min-width: 500px) {
-    .my-photo {
-      margin: 0 16px;
-    }
-  }
-  .card-basic-info-label {
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 4px;
-  }
-/*=====CARD | SELF-INTRODUCTION BEGIN END=====*/
+}
+.card-basic-info-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px;
+}
+/* ===== CARD | SELF-INTRODUCTION END ===== */
+
+/* ===== CARD | HOBBY BEGIN ===== */
+.swiper-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.swiper-slide {
+  background-color: #212121;
+}
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide .swiper-title {
+  margin-top: 4px;
+  position: absolute;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #00000080;
+  color: #ffffffdd;
+  padding: 0 0.5em;
+}
+/* ===== CARD | HOBBY END ===== */
 
 /* ===== CARD | SKILL BEGIN ===== */
 .tile-grid-cover {
@@ -232,3 +261,83 @@ a:hover{
   text-align: justify;
 }
 /* ===== CARD | SKILL END ===== */
+
+/* ===== CARD | MY WORK BEGIN ===== */
+.work {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+.work-title {
+  font-weight: 500;
+}
+@media screen and (min-width: 500px) {
+  .work {
+    grid-template-columns: 1fr 2fr;
+  }
+  .work-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+.work-image img {
+  width: 100%;
+  box-shadow: 5px 5px 0 -2px #a57575;
+  border: 2px solid #e8aaa3;
+}
+.work-image video {
+  width: 100%;
+  box-shadow: 5px 5px 0 -2px #a57575;
+  border: 2px solid #e8aaa3;
+}
+/* ===== CARD | MY WORK END ===== */
+
+/* ===== APP BAR BEGIN ===== */
+.app-bar {
+  position: sticky;
+  top: 0;
+  height: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 15;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+}
+.app-bar .app-bar-button-cover {
+  display: grid;
+  padding-top: calc(6px / 2);
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 0 6px;
+}
+.app-bar .app-bar-button-cover {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (min-width: 600px) {
+  .app-bar .app-bar-button-cover {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.app-bar .app-bar-title {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateX(-50%)
+    translateY(calc(50% + 2px));
+  font-size: 12px;
+  font-weight: 500;
+  color: #aeac78;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+}
+.app-bar button {
+  height: calc(40px - 6px);
+  padding: 0 12px;
+  background-color: #aeac78;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: calc((40px - 6px) / 2);
+}
+.app-bar button:hover {
+  opacity: 0.8;
+}
+/* ===== APP BAR END ===== */
