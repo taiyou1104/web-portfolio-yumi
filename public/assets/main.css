@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-/* ===== BASIC BEGIN ===== */
 html,
 body {
   font-family: Roboto, "Noto Sans JP", sans-serif;
@@ -37,9 +36,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* ===== BASIC END ===== */
 
-/* ===== COMMON PARTS BEGIN ===== */
+
+
 .text-dark {
   color: #101841;
 }
@@ -64,9 +63,7 @@ a:hover {
 .bg-3 {
   background-color: #f3deb9;
 }
-/* ===== COMMON PARTS END ===== */
 
-/* ===== OVERALL BEGIN ===== */
 .page-cover {
   min-height: 100vh;
 }
@@ -90,9 +87,7 @@ a:hover {
   right: 16px;
   bottom: 16px;
 }
-/* ===== OVERALL END ===== */
 
-/* ===== FOOTER BEGIN ===== */
 .footer-cover {
   max-width: 1000px;
   margin: 0 auto;
@@ -104,9 +99,7 @@ a:hover {
   padding: 16px;
   font-size: 0.875rem;
 }
-/* ===== FOOTER END ===== */
 
-/* ===== CARD COMMON BEGIN ===== */
 .card-cover {
   max-width: 1000px;
   margin: 0 auto;
@@ -157,9 +150,7 @@ a:hover {
   padding: 16px;
   font-size: 0.875rem;
 }
-/* ===== CARD COMMON END ===== */
 
-/* ===== CARD | SELF-INTRODUCTION BEGIN ===== */
 .card-basic-info-layout {
   display: flex;
   flex-direction: column;
@@ -192,9 +183,7 @@ a:hover {
   font-weight: 500;
   padding: 4px;
 }
-/* ===== CARD | SELF-INTRODUCTION END ===== */
 
-/* ===== CARD | HOBBY BEGIN ===== */
 .swiper-area {
   position: relative;
   width: 100%;
@@ -221,9 +210,7 @@ a:hover {
   color: #ffffffdd;
   padding: 0 0.5em;
 }
-/* ===== CARD | HOBBY END ===== */
 
-/* ===== CARD | SKILL BEGIN ===== */
 .tile-grid-cover {
   display: grid;
   grid-auto-rows: minmax(100px, auto);
@@ -260,9 +247,7 @@ a:hover {
   color: #5f574f;
   text-align: justify;
 }
-/* ===== CARD | SKILL END ===== */
 
-/* ===== CARD | MY WORK BEGIN ===== */
 .work {
   display: grid;
   gap: 16px;
@@ -290,9 +275,7 @@ a:hover {
   box-shadow: 5px 5px 0 -2px #a57575;
   border: 2px solid #e8aaa3;
 }
-/* ===== CARD | MY WORK END ===== */
 
-/* ===== APP BAR BEGIN ===== */
 .app-bar {
   position: sticky;
   top: 0;
@@ -340,4 +323,3 @@ a:hover {
 .app-bar button:hover {
   opacity: 0.8;
 }
-/* ===== APP BAR END ===== */
